@@ -1,0 +1,12 @@
+
+def serie(x):
+
+    if x < 2:
+        return x
+    else:
+        return serie(x-1) + serie(x-2)
+
+num = int(input("Cual es la cantidad de numeros que desea: "))
+
+for x in range(num):
+    print(serie(x))
